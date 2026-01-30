@@ -1,14 +1,24 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include<math.h>
 #include <string.h>
 
 int main() {
 
-    char item[100]="";
+    int number = 0;
+    double pi = 0;
+    int st = 1;
 
-    printf("Enter an item: ");
-    fgets(item, sizeof(item), stdin);
-    item[strcspn(item, "\n")] = 0;  // Remove newline character
-    printf("You entered: %s\n", item);
+    printf("Number: ");
+    scanf("%i", &number);
+
+    for(int i = 1; i < number; i++)
+    {
+        st = st * 10;
+    }
+
+    pi = M_PI * st;
+
+    printf("Pi: %lf", pi);
     return 0;
 }
