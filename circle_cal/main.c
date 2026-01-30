@@ -136,7 +136,7 @@ int main()
         fgets(action, sizeof(action), stdin);
         action[strcspn(action, "\n")] = 0;
 
-        if (strcmp(action, "Base Area") == 0 || strcmp(action, "base area"))
+        if (strcmp(action, "Base Area") == 0 || strcmp(action, "base area") == 0)
         {
             double radius;
             printf("Enter the radius: ");
