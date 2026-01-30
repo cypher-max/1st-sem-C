@@ -206,7 +206,7 @@ int main()
             printf("Not a valid reponse.\n");
         }
     }
-    else if (strcmp(shape, "Hemisphere") == 0 || strcmp(shape, "hemisphere"))
+    else if (strcmp(shape, "Hemisphere") == 0 || strcmp(shape, "hemisphere") == 0)
     {
         printf("Enter your action (Curved surface area, Total surface area, Volume): ");
         fgets(action, sizeof(action), stdin);
@@ -243,7 +243,7 @@ int main()
     }
     else if (strcmp(shape, "List") == 0 || strcmp(shape, "list") == 0)
     {
-        printf("The Shapes are: \n");
+        printf("The Shapes are: \n\n");
         printf("1.Circle\n");
         printf("2.Cylinder\n");
         printf("3.Cone\n");
