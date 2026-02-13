@@ -1,24 +1,23 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include<math.h>
-#include <string.h>
+#include<stdio.h>
+#include<graphics.h>
 
-int main() {
+int main(){
+    int midX, midY;
+    int leftEyeX, righteyeX, eyeY;
+    int noseX, noseY;
+    int headRadius;
+    int eyeNoseRadius;
+    int smileRadius;
+    int stepX, stepY;
 
-    int number = 0;
-    double pi = 0;
-    int st = 1;
+    initwindow(500, 400, "Pirate - press key to close", 200, 150);
 
-    printf("Number: ");
-    scanf("%i", &number);
+    midX = getmaxx()/2;
+    midY = getmaxy()/2;
+    headRadius = getmaxy()/4;
+    circle (midX, midY, headRadius);
 
-    for(int i = 1; i < number; i++)
-    {
-        st = st * 10;
-    }
-
-    pi = M_PI * st;
-
-    printf("Pi: %lf", pi);
+    getch();
+    closegraph();
     return 0;
 }
