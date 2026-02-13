@@ -16,6 +16,8 @@ int main(){
     printf("Enter the length of the pattern: ");
     scanf("%i", &n);
 
+    printf("\n");
+
     stopgap = n % 2;
 
     if (stopgap == 1)

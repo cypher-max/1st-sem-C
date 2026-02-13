@@ -17,9 +17,9 @@ int main(){
 
     for(i = 1; i <= n; i++)
     {
-        printf("%i     \t\t", i);
+        printf("%i\t\t", i);
         s = pow(i, 2);
-        printf(" %i     \t\t", s);
+        printf(" %i\t\t", s);
         c = pow(i, 3);
         printf(" %i\n", c);
     }
